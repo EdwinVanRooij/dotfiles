@@ -206,6 +206,8 @@ alias ei='vim ~/.config/i3/config'
 alias ev='vim ~/.vimrc'
 alias er='vim ~/dotfiles/README.md'
 
+alias mux=byobu
+
 alias tail-log='tail -f ~/dotfiles/data/log.txt'
 alias grep-log='cat ~/dotfiles/data/log.txt | grep'
 
