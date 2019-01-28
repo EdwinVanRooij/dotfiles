@@ -6,13 +6,13 @@ Dotfiles location:  /home/eddy/dotfiles
 
 Installation: `bootstrap.sh` from {dotfiles location}
 
-Switch keyboard layout - qwerty: `setxkbmap -layout us`
+Switch keyboard layout - Qwerty: `setxkbmap -layout us`
 Switch keyboard layout - Dvorak: `xmodmap .Xmodmap`
 
 Dump dconf settings: `dconf dump / > dconf-dump`
 
 
-## OS Installation & Preparation
+## OS Installation & Configuration
 
 ### Solus Installation
 
@@ -22,7 +22,7 @@ Dump dconf settings: `dconf dump / > dconf-dump`
 1. Download & install all software updates
 1. Restart solus
 
-### Preparation
+### Solus Configuration
 1. Software installation:
 	1. Google chrome from software center, close software center after ~2 minutes. Should be installed, bug says it's still installing.
 	1. Spotify
@@ -33,3 +33,10 @@ Dump dconf settings: `dconf dump / > dconf-dump`
 1. Copy background to 'Pictures' folder --> Menu --> 'Background' --> set 2x background
 1. Execute 'dconf load / < dconf-dump'
 1. In gnome-disks, make sure the swap partition is actually used by setting it to 'mount on boot'.
+
+### Windows Installation
+
+1. Install
+
+### Windows Configuration
+1. In addition to the standard dotfiles installation.
