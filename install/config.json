@@ -1,0 +1,21 @@
+{
+  "email": "edwinvrooij@gmail.com",
+  "symlinks": {
+    "/home/eddy/dotfiles/config/xmodmap": "/home/eddy/.Xmodmap",
+    "/home/eddy/dotfiles/config/gtk-css": "/home/eddy/.config/gtk-3.0/gtk.css",
+    "/home/eddy/dotfiles/config/git": "/home/eddy/.gitconfig",
+    "/home/eddy/dotfiles/config/tmux": "/home/eddy/.tmux.conf",
+    "/home/eddy/dotfiles/config/screenkey": "/home/eddy/.config/screenkey.json",
+    "/home/eddy/dotfiles/config/fish": "/home/eddy/.config/fish",
+    "/home/eddy/dotfiles/config/vim": "/home/eddy/.vimrc",
+    "/home/eddy/dotfiles/config/autostart": "/home/eddy/.config/autostart/Autostart.desktop",
+    "/home/eddy/.vimrc": "/home/eddy/.ideavimrc",
+    "/mnt/data": "/home/eddy/Data"
+  },
+  "applications": [
+    "git",
+    "tmux",
+    "fish",
+    "vim"
+  ]
+}

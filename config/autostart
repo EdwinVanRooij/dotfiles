@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Autostart
+Description=Starts all autostart scripts
+Exec=/home/eddy/dotfiles/execute_autostarts.sh

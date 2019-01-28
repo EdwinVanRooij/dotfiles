@@ -1,0 +1,5 @@
+[user]
+	email = edwinvrooij@gmail.com
+	name = Edwin van Rooij
+[credential]
+	helper = cache --timeout=7200
