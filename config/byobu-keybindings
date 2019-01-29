@@ -1,0 +1,2 @@
+bind-key -n M-h previous-window
+bind-key -n M-l next-window

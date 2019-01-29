@@ -8,6 +8,8 @@
     "/home/eddy/dotfiles/config/screenkey": "/home/eddy/.config/screenkey.json",
     "/home/eddy/dotfiles/config/fish": "/home/eddy/.config/fish",
     "/home/eddy/dotfiles/config/.vimrc": "/home/eddy/.vimrc",
+    "/home/eddy/dotfiles/config/byobu-keybindings": "/home/eddy/.byobu/keybindings.tmux",
+    "/home/eddy/dotfiles/config/byobu-status": "/home/eddy/.byobu/status",
     "/home/eddy/dotfiles/config/autostart": "/home/eddy/.config/autostart/Autostart.desktop",
     "/home/eddy/.vimrc": "/home/eddy/.ideavimrc",
     "/mnt/data": "/home/eddy/Data"
