@@ -1,2 +1,9 @@
+# Set alt+h/l to switch windows in vim-like fashion (h means left, l means right)
 bind-key -n M-h previous-window
 bind-key -n M-l next-window
+
+# Set ctrl+r to rename in IDE-like fashion (r usually means refactor/rename)
+bind-key -n C-r command-prompt -p "(rename-window) " "rename-window '%%'"
+
+# Set ctrl+t to 'new tab', in most terminals & browsers it's like that
+bind-key -n C-t new-window -c "#{pane_current_path}" \; rename-window "-"
