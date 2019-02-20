@@ -4,7 +4,6 @@
     "/home/eddy/dotfiles/config/xmodmap": "/home/eddy/.Xmodmap",
     "/home/eddy/dotfiles/config/gtk-css": "/home/eddy/.config/gtk-3.0/gtk.css",
     "/home/eddy/dotfiles/config/git": "/home/eddy/.gitconfig",
-    "/home/eddy/dotfiles/config/tmux": "/home/eddy/.tmux.conf",
     "/home/eddy/dotfiles/config/screenkey": "/home/eddy/.config/screenkey.json",
     "/home/eddy/dotfiles/config/fish": "/home/eddy/.config/fish",
     "/home/eddy/dotfiles/config/.vimrc": "/home/eddy/.vimrc",
