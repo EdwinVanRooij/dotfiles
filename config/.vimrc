@@ -14,7 +14,6 @@ set ignorecase " search is case insensitive
 set smartcase " unless I typed uppercase characters
 set clipboard=unnamedplus
 set history=1000
-set number
 set scrolloff=5
 set formatoptions-=t " disable auto newlines
 set visualbell
