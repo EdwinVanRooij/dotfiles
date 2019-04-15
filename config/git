@@ -3,3 +3,5 @@
 	name = Edwin van Rooij
 [credential]
 	helper = cache --timeout=7200
+[core]
+	autocrlf = true
