@@ -24,6 +24,8 @@ set noruler
 set laststatus=0
 set noshowcmd
 
+set colorcolumn=80
+
 syntax enable
 filetype plugin indent on
 " ================ Leader key ================
