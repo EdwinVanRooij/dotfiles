@@ -64,7 +64,6 @@ def set_locale_keyboard():
 
 def set_fish_shell():
     __cmd("sudo usermod -s /usr/bin/fish eddy")
-    # __cmd("chsh -s /usr/bin/fish", interactive=True)
 
 
 def get_disks():
@@ -75,7 +74,6 @@ def get_disks():
 def get_config():
     location = "/home/eddy/dotfiles/install/config.json"
     info("Retrieving configuration file from {}...".format(location))
-    # try:
     config = json.load(open(location))
     if config:
         ok("Found install configuration...")

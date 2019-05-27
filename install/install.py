@@ -8,7 +8,7 @@ __author__ = "Edwin van Rooij"
 from commands import install_applications, link, git_ssh_setup, get_disks, \
     set_data_directory
 from commands import set_fish_shell, set_locale_keyboard, get_config
-from interaction import header, description, prompt, prompt_options, ok, exit_program
+from interaction import prompt, prompt_options, ok, exit_program
 
 
 def main():
@@ -17,14 +17,14 @@ def main():
     symlinks = config["symlinks"]
     applications = config["applications"]
 
-    header('Welcome!')
-    description('This is my dotfiles repo.\n All programs will now safely install on your system.\n', symbol=False)
-    description('Author: ' + __author__)
+    print('Welcome!')
+    print('This is my dotfiles repo.\n All programs will now safely install on your system.\n')
+    print('Author: ' + __author__)
     if not prompt('Continue?'):
         exit_program()
 
     # Initialize data disk(s)
-    header('Data')
+    print('Data')
     # 1; Setup disks?
     if prompt('Setup data partition?'):
         disks = get_disks()
@@ -58,7 +58,7 @@ def main():
         link(path, "~/Data")
 
     # Install software using package manager
-    header('Software installation')
+    print('Software installation')
     if prompt('Install config-specified software using package manager?'):
         install_applications(
             applications,
@@ -67,22 +67,22 @@ def main():
         )
 
     # Setup symlinks
-    header('Symbolic links')
+    print('Symbolic links')
     if prompt('Execute symlinks from config.json?'):
         for source, target in symlinks.items():
             link(source, target)
 
-    header('Shell')
+    print('Shell')
     if prompt('Setup Fish as default shell?'):
         set_fish_shell()
 
     # Setup git ssh key
-    header('Git')
+    print('Git')
     if prompt('Generate SSH keys?'):
         git_ssh_setup(email)
 
     # Setup key mapping
-    header('Locale keyboard')
+    print('Locale keyboard')
     if prompt('Modify locale keyboard to set dvorak? (login uses this)'):
         set_locale_keyboard()
 
@@ -90,3 +90,5 @@ def main():
 if __name__ == "__main__":
     """This is executed when run from the command line."""
     main()
+
+

@@ -1,8 +1,5 @@
 from time import sleep
 import sys
-from pyfiglet import Figlet
-
-f = Figlet(font='big')
 
 
 class bcolors:
@@ -61,14 +58,6 @@ def question(message):
     )
 
 
-def print(text, delay=0.001):
-    for l in text:
-        sys.stdout.write(l)
-        sys.stdout.flush()
-        sleep(delay)
-    sys.stdout.write('\n')
-
-
 def invert(text):
     return bcolors.WHITE_BACKGROUND + text + bcolors.ENDC
 
@@ -76,8 +65,8 @@ def invert(text):
 def header(text):
     print("\n\n{color_start}{message}{color_end}".format(color_start=bcolors.BOLD,
                                                          color_end=bcolors.ENDC, message=f.renderText(text), ),
-          #delay=0)
-     delay=0.001)
+          # delay=0)
+          delay=0.001)
 
 
 def description(message, symbol=True):
@@ -85,7 +74,7 @@ def description(message, symbol=True):
         print("{symbol} : {message}".format(symbol=u'\u2192', message=message, ))
     else:
         print("{color_start}{message}{color_end}".format(message=message, color_start=bcolors.BOLD,
-                                                          color_end=bcolors.ENDC, ))
+                                                         color_end=bcolors.ENDC, ))
 
 
 def info(message):

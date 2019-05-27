@@ -10,9 +10,6 @@ class Partition(object):
         self.name = name
         self.flags = flags
 
-    # def __str__(self):
-        # return "{} {} {} {} {} {} {}".format(self.number, self.start, self.end, self.size,
-        #                                      self.file_system, self.name, self.flags)
     def __str__(self):
         return "Partition '{number}' ({file_system}): {size}".format(
             number=self.number,
@@ -44,9 +41,6 @@ class Disk(object):
             numbers.append(p.number)
         return numbers
 
-    # def __str__(self):
-        # return "{} {} {} {} {} {} {}".format(self.model, self.location, self.size, self.sector_size,
-        #                                      self.partition_table, self.flags, self.partitions)
 
     def __str__(self):
         return "Disk '{model}' ({location}): {size} ({partitions} partitions)".format(
