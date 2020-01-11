@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "ctrl+alt+shift+l",
+    "description": "ctrl+shift+;",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 9,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -19,11 +19,10 @@
     },
     "hotkey": {
         "modifiers": [
-            "<alt>",
             "<ctrl>",
             "<shift>"
         ],
-        "hotKey": "l"
+        "hotKey": ";"
     },
     "filter": {
         "regex": null,
