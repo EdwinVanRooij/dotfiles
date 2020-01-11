@@ -12,6 +12,7 @@
   "applications": [
     "git",
     "fish",
-    "vim"
+    "vim",
+    "xdotool"
   ]
 }

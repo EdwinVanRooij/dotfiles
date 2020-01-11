@@ -1,0 +1,35 @@
+Ctrl + alt + h =
+- Get current workspace
+- Save current workspace to 'previous workspace'
+- Move workspace to the left
+
+Ctrl + shift + alt + h =
+- Get current workspace
+- Save current workspace to 'previous workspace'
+- Move WITH WINDOW workspace to the left
+
+
+
+Ctrl + alt + l =
+- Get current workspace
+- Save current workspace to 'previous workspace'
+- Move workspace to the right
+
+Ctrl + shift + alt + l =
+- Get current workspace
+- Save current workspace to 'previous workspace'
+- Move WITH WINDOW workspace to the right
+
+
+
+Ctrl + ; =
+- Get previous workspace
+- Get current workspace 
+- Save current workspace to 'previous workspace'
+- Move to previous workspace
+
+Ctrl + shift + ; = 
+- Get previous workspace
+- Get current workspace
+- Save current workspace to 'previous workspace'
+- Move WITH WINDOW to previous workspace
