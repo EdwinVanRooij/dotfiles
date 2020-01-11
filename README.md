@@ -27,7 +27,7 @@ Dump dconf settings: `dconf dump / > dconf-dump`
 	1. Google chrome from software center, close software center after ~2 minutes. Should be installed, bug says it's still installing.
 	1. Spotify
 1. Setup chrome using installation instructions
-1. Download dotfiles https://github.com/EdwinVanRooij/dotfiles , unzip, move dotfiles to ~/dotfiles
+1. Git clone https://github.com/EdwinVanRooij/dotfiles 
 1. Execute bootstrap.sh, follow instructions
 1. Copy background to 'Pictures' folder --> Menu --> 'Background' --> set 2x background
 1. CAREFUL: This changes a lot. Maybe compare dump first before loading a
