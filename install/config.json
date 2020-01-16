@@ -8,6 +8,7 @@
     "/home/eddy/dotfiles/config/.vimrc": "/home/eddy/.vimrc",
     "/home/eddy/dotfiles/config/autokey.desktop": "/home/eddy/.config/autostart",
     "/home/eddy/dotfiles/config/spotify.desktop": "/home/eddy/.config/autostart",
+    "/home/eddy/dotfiles/Mazi": "/home/eddy/.config/autokey/data/",
     "/home/eddy/.vimrc": "/home/eddy/.ideavimrc",
     "/mnt/data": "/home/eddy/Data"
   },
