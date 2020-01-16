@@ -170,7 +170,8 @@ nnoremap , Yp
 vnoremap , yP
 " .
 " ;
-nnoremap ; :action VimFilePrevious<cr>
+"nnoremap ; :action VimFilePrevious<cr>
+nnoremap ; <C-S-6>
 " /
 nnoremap / :action CommentByLineComment<cr>
 vnoremap / <Esc>gvhh:<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<cr>
