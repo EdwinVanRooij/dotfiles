@@ -39,17 +39,6 @@ function fish_prompt --description "Write out the prompt"
         z --add "$PWD"
 end
 
-
-function fish_greeting
-	set_color cyan
-	echo -n $USER
-	set_color normal
-	echo -n ' at '
-	set_color cyan
-	echo (hostname)
-	echo -ne "\e[2 q" # Sets the cursor to a non-blinking block. 
-end
-
 function fish_user_key_bindings
     bind \n default_command
     bind \r default_command
