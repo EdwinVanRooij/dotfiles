@@ -24,10 +24,6 @@ set noruler
 set laststatus=0
 set noshowcmd
 
-set colorcolumn=80
-
-au BufRead,BufNewFile *.md setlocal textwidth=80
-
 syntax enable
 filetype plugin indent on
 " ================ Leader key ================
