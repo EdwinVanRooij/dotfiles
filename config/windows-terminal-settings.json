@@ -6,148 +6,285 @@
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 {
-	  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
 
-	    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-abceeeaa6101}",
+  "defaultProfile": "{0caa0dad-35be-5f56-a8ff-abceeeaa6101}",
 
-	      // You can add more global application settings here.
-	        // To learn more about global settings, visit https://aka.ms/terminal-global-settings
+  // You can add more global application settings here.
+  // To learn more about global settings, visit https://aka.ms/terminal-global-settings
 
-		  // If enabled, selections are automatically copied to your clipboard.
-		    "copyOnSelect": false,
+  // If enabled, selections are automatically copied to your clipboard.
+  "copyOnSelect": false,
 
-		      // If enabled, formatted data is also copied to your clipboard
-		        "copyFormatting": false,
+  // If enabled, formatted data is also copied to your clipboard
+  "copyFormatting": false,
 
-			  // A profile specifies a command to execute paired with information about how it should look and feel.
-			    // Each one of them will appear in the 'New Tab' dropdown,
-			      //   and can be invoked from the commandline with `wt.exe -p xxx`
-			        // To learn more about profiles, visit https://aka.ms/terminal-profile-settings
-				  "profiles": {
-					      "defaults": {
-						            "colorScheme": "Dracula",
-							          //"useAcrylic": true,
-								        //"acrylicOpacity": 0.60,
-									      "padding": "15, 15, 15, 15",
-									          },
-										      "list": [
-											            {
-													            "commandline": "ubuntu2004.exe",
-														            "fontFace": "Consolas",
-															            "fontSize": 12,
-																            "backgroundImage": "C:\\Users\\EdwinvanRooij\\Google Drive\\bg-image.jpg",
-																	            "backgroundImageOpacity": 0.20,
-																		            //"backgroundImageStretchMode": "fill",
-																			            //"fontFace": "Consolas",
-																				            //"fontSize": 10,
-																					            "guid": "{0caa0dad-35be-5f56-a8ff-abceeeaa6101}",
-																						            //"historySize": 9001,
-																							            "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-																								            "name": "Windows Subsystem Linux",
-																									            "tabTitle": "Windows Subsystem Linux",
-																										            "snapOnInput": true,
-																											            "startingDirectory": "%USERPROFILE%"
-																												          },
-																													        {
-																															        // Make changes here to the powershell.exe profile.
-																																        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-																																	        "name": "Windows PowerShell",
-																																		        "commandline": "powershell.exe",
-																																			        "hidden": false
-																																				      },
-																																				            {
-																																						            // Make changes here to the cmd.exe profile.
-																																							            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-																																								            "name": "Command Prompt",
-																																									            "commandline": "cmd.exe",
-																																										            "hidden": false
-																																											          },
-																																												        {
-																																														        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-																																															        "hidden": false,
-																																																        "name": "Azure Cloud Shell",
-																																																	        "source": "Windows.Terminal.Azure"
-																																																		      },
-																																																		            {
-																																																				            "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-																																																					            "hidden": false,
-																																																						            "name": "Ubuntu-20.04",
-																																																							            "source": "Windows.Terminal.Wsl"
-																																																								          }
-																																																									      ]
-																																																									        },
+  // A profile specifies a command to execute paired with information about how it should look and feel.
+  // Each one of them will appear in the 'New Tab' dropdown,
+  //   and can be invoked from the commandline with `wt.exe -p xxx`
+  // To learn more about profiles, visit https://aka.ms/terminal-profile-settings
+  "profiles": {
+    "defaults": {
+      //"useAcrylic": true,
+      //"acrylicOpacity": 0.60,
+      "colorScheme": "Dark+",
+      "padding": "15, 15, 15, 15",
+      "fontFace": "Fira Code",
+      "fontSize": 16,
+      "backgroundImage": "C:\\Users\\EdwinvanRooij\\Google Drive\\bg-image.jpg",
+      "backgroundImageOpacity": 0.4,
+      "acrylicOpacity": 0.9,
+      "useAcrylic": true
+    },
+    "list": [
+      {
+        "guid": "{0caa0dad-35be-5f56-a8ff-abceeeaa6101}",
+        "name": "WSL",
+        "commandline": "ubuntu2004.exe",
+        "hidden": false,
+        "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+        "startingDirectory": "%USERPROFILE%"
+      },
+      {
+        // Make changes here to the powershell.exe profile.
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "Linnea",
+        "commandline": "powershell.exe -NoLogo -NoExit",
+        "hidden": false,
+        "fontFace": "Cascadia Code PL",
+        "fontSize": 10,
+        "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+        "backgroundImage": "C:\\Users\\EdwinvanRooij\\Google Drive\\bg-image.jpg",
+        "backgroundImageOpacity": 0.2,
+        "acrylicOpacity": 0.8,
+        "useAcrylic": true,
+        "startingDirectory": "Q:\\Development"
+      },
+      {
+        // Make changes here to the powershell.exe profile.
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "Windows PowerShell",
+        "commandline": "powershell.exe",
+        "hidden": false
+      },
+      {
+        // Make changes here to the cmd.exe profile.
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "name": "Command Prompt",
+        "commandline": "cmd.exe",
+        "hidden": false
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      },
+      {
+        "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+        "hidden": false,
+        "name": "Ubuntu-20.04",
+        "source": "Windows.Terminal.Wsl"
+      }
+    ]
+  },
 
-																																																										  // Add custom color schemes to this array.
-																																																										    // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
-																																																										      "schemes": [
-																																																											          {
-																																																													        "name": "Dracula",
-																																																														      "cursorColor": "#F8F8F2",
-																																																														            "selectionBackground": "#44475A",
-																																																															          "background": "#282A36",
-																																																																        "foreground": "#F8F8F2",
-																																																																	      "black": "#21222C",
-																																																																	            "blue": "#BD93F9",
-																																																																		          "cyan": "#8BE9FD",
-																																																																			        "green": "#50FA7B",
-																																																																				      "purple": "#FF79C6",
-																																																																				            "red": "#FF5555",
-																																																																					          "white": "#F8F8F2",
-																																																																						        "yellow": "#F1FA8C",
-																																																																							      "brightBlack": "#6272A4",
-																																																																							            "brightBlue": "#D6ACFF",
-																																																																								          "brightCyan": "#A4FFFF",
-																																																																									        "brightGreen": "#69FF94",
-																																																																										      "brightPurple": "#FF92DF",
-																																																																										            "brightRed": "#FF6E6E",
-																																																																											          "brightWhite": "#FFFFFF",
-																																																																												        "brightYellow": "#FFFFA5"
-																																																																													    }
-																																																																													      ],
-
-																																																																													        // Add custom actions and keybindings to this array.
-																																																																														  // To unbind a key combination from your defaults.json, set the command to "unbound".
-																																																																														    // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
-																																																																														      "actions": [
-																																																																															          // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
-																																																																																      // These two lines additionally bind them to Ctrl+C and Ctrl+V.
-																																																																																          // To learn more about selection, visit https://aka.ms/terminal-selection
-																																																																																	      {
-																																																																																		            "command": {
-																																																																																				            "action": "copy",
-																																																																																					            "singleLine": false
-
-																																																																																						          },
-																																																																																							        "keys": "ctrl+c"
-																																																																																								    },
-																																																																																								        {
-																																																																																										      "command": "paste",
-																																																																																										            "keys": "ctrl+v"
-																																																																																											        },
-
-																																																																																												    // Press Ctrl+Shift+F to open the search box
-																																																																																												        {
-																																																																																														      "command": "find",
-																																																																																														            "keys": "ctrl+shift+f"
-																																																																																															        },
-
-																																																																																																    {
-																																																																																																	          "command": "commandPalette",
-																																																																																																		        "keys": "ctrl+shift+p"
-																																																																																																			    },
-
-																																																																																																			        // Press Alt+Shift+D to open a new pane.
-																																																																																																				    // - "split": "auto" makes this pane open in the direction that provides the most surface area.
-																																																																																																				        // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
-																																																																																																					    // To learn more about panes, visit https://aka.ms/terminal-panes
-																																																																																																					        {
-																																																																																																							      "command": {
-																																																																																																								              "action": "splitPane",
-																																																																																																									              "split": "auto",
-																																																																																																										              "splitMode": "duplicate"
-																																																																																																											            },
-																																																																																																												          "keys": "alt+shift+d"
-																																																																																																													      }
-																																																																																																													        ]
+  // Add custom color schemes to this array.
+  // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
+  "schemes": [
+    {
+      "name": "Dracula",
+      "cursorColor": "#F8F8F2",
+      "selectionBackground": "#44475A",
+      "background": "#282A36",
+      "foreground": "#F8F8F2",
+      "black": "#21222C",
+      "blue": "#BD93F9",
+      "cyan": "#8BE9FD",
+      "green": "#50FA7B",
+      "purple": "#FF79C6",
+      "red": "#FF5555",
+      "white": "#F8F8F2",
+      "yellow": "#F1FA8C",
+      "brightBlack": "#6272A4",
+      "brightBlue": "#D6ACFF",
+      "brightCyan": "#A4FFFF",
+      "brightGreen": "#69FF94",
+      "brightPurple": "#FF92DF",
+      "brightRed": "#FF6E6E",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFFFA5"
+    },
+    {
+      "name": "MaterialOcean",
+      "black": "#546e7a",
+      "red": "#ff5370",
+      "green": "#c3e88d",
+      "yellow": "#ffcb6b",
+      "blue": "#82aaff",
+      "purple": "#c792ea",
+      "cyan": "#89ddff",
+      "white": "#ffffff",
+      "brightBlack": "#546e7a",
+      "brightRed": "#ff5370",
+      "brightGreen": "#c3e88d",
+      "brightYellow": "#ffcb6b",
+      "brightBlue": "#82aaff",
+      "brightPurple": "#c792ea",
+      "brightCyan": "#89ddff",
+      "brightWhite": "#ffffff",
+      "background": "#0f111a",
+      "foreground": "#8f93a2"
+    },
+    {
+      "name": "Builtin Pastel Dark",
+      "black": "#4f4f4f",
+      "red": "#ff6c60",
+      "green": "#a8ff60",
+      "yellow": "#ffffb6",
+      "blue": "#96cbfe",
+      "purple": "#ff73fd",
+      "cyan": "#c6c5fe",
+      "white": "#eeeeee",
+      "brightBlack": "#7c7c7c",
+      "brightRed": "#ffb6b0",
+      "brightGreen": "#ceffac",
+      "brightYellow": "#ffffcc",
+      "brightBlue": "#b5dcff",
+      "brightPurple": "#ff9cfe",
+      "brightCyan": "#dfdffe",
+      "brightWhite": "#ffffff",
+      "background": "#000000",
+      "foreground": "#bbbbbb"
+    },
+    {
+      "name": "Builtin Solarized Dark",
+      "black": "#073642",
+      "red": "#dc322f",
+      "green": "#859900",
+      "yellow": "#b58900",
+      "blue": "#268bd2",
+      "purple": "#d33682",
+      "cyan": "#2aa198",
+      "white": "#eee8d5",
+      "brightBlack": "#002b36",
+      "brightRed": "#cb4b16",
+      "brightGreen": "#586e75",
+      "brightYellow": "#657b83",
+      "brightBlue": "#839496",
+      "brightPurple": "#6c71c4",
+      "brightCyan": "#93a1a1",
+      "brightWhite": "#fdf6e3",
+      "background": "#002b36",
+      "foreground": "#839496"
+    },
+    {
+      "name": "Calamity",
+      "black": "#2f2833",
+      "red": "#fc644d",
+      "green": "#a5f69c",
+      "yellow": "#e9d7a5",
+      "blue": "#3b79c7",
+      "purple": "#f92672",
+      "cyan": "#74d3de",
+      "white": "#d5ced9",
+      "brightBlack": "#7e6c88",
+      "brightRed": "#fc644d",
+      "brightGreen": "#a5f69c",
+      "brightYellow": "#e9d7a5",
+      "brightBlue": "#3b79c7",
+      "brightPurple": "#f92672",
+      "brightCyan": "#74d3de",
+      "brightWhite": "#ffffff",
+      "background": "#2f2833",
+      "foreground": "#d5ced9"
+    },
+    {
+      "name": "Chalkboard",
+      "black": "#000000",
+      "red": "#c37372",
+      "green": "#72c373",
+      "yellow": "#c2c372",
+      "blue": "#7372c3",
+      "purple": "#c372c2",
+      "cyan": "#72c2c3",
+      "white": "#d9d9d9",
+      "brightBlack": "#323232",
+      "brightRed": "#dbaaaa",
+      "brightGreen": "#aadbaa",
+      "brightYellow": "#dadbaa",
+      "brightBlue": "#aaaadb",
+      "brightPurple": "#dbaada",
+      "brightCyan": "#aadadb",
+      "brightWhite": "#ffffff",
+      "background": "#29262f",
+      "foreground": "#d9e6f2"
+    },
+{
+  "name": "Dark+",
+  "black": "#000000",
+  "red": "#cd3131",
+  "green": "#0dbc79",
+  "yellow": "#e5e510",
+  "blue": "#2472c8",
+  "purple": "#bc3fbc",
+  "cyan": "#11a8cd",
+  "white": "#e5e5e5",
+  "brightBlack": "#666666",
+  "brightRed": "#f14c4c",
+  "brightGreen": "#23d18b",
+  "brightYellow": "#f5f543",
+  "brightBlue": "#3b8eea",
+  "brightPurple": "#d670d6",
+  "brightCyan": "#29b8db",
+  "brightWhite": "#e5e5e5",
+  "background": "#0e0e0e",
+  "foreground": "#cccccc"
 }
+  ],
 
+  // Add custom actions and keybindings to this array.
+  // To unbind a key combination from your defaults.json, set the command to "unbound".
+  // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
+  "actions": [
+    // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
+    // These two lines additionally bind them to Ctrl+C and Ctrl+V.
+    // To learn more about selection, visit https://aka.ms/terminal-selection
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+
+    // Press Ctrl+Shift+F to open the search box
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
+    },
+
+    {
+      "command": "commandPalette",
+      "keys": "ctrl+shift+p"
+    },
+
+    // Press Alt+Shift+D to open a new pane.
+    // - "split": "auto" makes this pane open in the direction that provides the most surface area.
+    // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
+    // To learn more about panes, visit https://aka.ms/terminal-panes
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    }
+  ]
+}
