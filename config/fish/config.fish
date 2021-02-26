@@ -47,6 +47,7 @@ function fish_greeting
 	echo -n ' at '
 	set_color cyan
 	echo (hostname)
+	echo -ne "\e[2 q" # Sets the cursor to a non-blinking block. 
 end
 
 function fish_user_key_bindings
