@@ -13,5 +13,6 @@
   ],
   "package_manager": "apt",
   "install_command": "install",
+  "install_args": "-y",
   "is_wsl": true
 }

@@ -1,7 +1,7 @@
 from time import sleep
 import sys
 from os import walk
-import os
+import glob, os
 
 
 class bcolors:
@@ -54,9 +54,11 @@ def prompt_options(text, options):
 
 
 def prompt_file_options(text, file_path):
+    file_names_raw = glob.glob(os.path.join(file_path, "*"))
     file_names = []
-    for (dir_path, dir_names, file_names) in walk(file_path):
-        file_names.extend(file_names)
+    for file_name in file_names_raw:
+        base_name = os.path.basename(file_name)
+        file_names.append(base_name)
 
     if len(file_names) > 1:
         for idx, d in enumerate(file_names):

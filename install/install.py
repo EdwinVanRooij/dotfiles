@@ -36,7 +36,8 @@ def main():
         install_applications(
             config["applications"],
             package_manager=config["package_manager"],
-            install_command=config["install_command"]
+            install_command=config["install_command"],
+            install_args=config["install_args"]
         )
 
     if prompt('Setup Fish as default shell?'):

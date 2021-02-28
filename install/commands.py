@@ -99,8 +99,8 @@ def set_data_directory(line):
     __cmd("sudo sed -i '$ a\\{}' /etc/fstab".format(line))
 
 
-def install_applications(applications, package_manager, install_command):
+def install_applications(applications, package_manager, install_command, install_args):
     info("Applications to install: {}".format(applications))
     for app in applications:
         info("Installing {}...".format(app))
-        __cmd("sudo {} {} {}".format(package_manager, install_command, app), interactive=True)
+        __cmd("sudo {} {} {} {}".format(package_manager, install_command, app, install_args), interactive=True)
