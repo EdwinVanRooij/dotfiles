@@ -1,5 +1,7 @@
 from time import sleep
 import sys
+from os import walk
+import os
 
 
 class bcolors:
@@ -49,6 +51,25 @@ def prompt_options(text, options):
             return reply
 
     return prompt_options("Invalid answer '{}'.".format(reply), options)
+
+
+def prompt_file_options(text, file_path):
+    file_names = []
+    for (dir_path, dir_names, file_names) in walk(file_path):
+        file_names.extend(file_names)
+
+    if len(file_names) > 1:
+        for idx, d in enumerate(file_names):
+            print(idx, d)
+    elif len(file_names) == 1:
+        return file_names[0]
+    else:
+        print('Found no file options for path ' + file_path + ', exiting program.')
+        exit_program()
+
+    chosen = prompt_options(text, range(len(file_names)))
+
+    return os.path.join(file_path, file_names[chosen])
 
 
 def question(message):

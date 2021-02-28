@@ -17,5 +17,8 @@
     "fish",
     "vim",
     "xdotool"
-  ]
+  ],
+  "package_manager": "eopkg",
+  "install_command": "install",
+  "is_wsl": true
 }

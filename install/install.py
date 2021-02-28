@@ -1,29 +1,58 @@
 #!/usr/bin/env python3
-"""
-This script installs my dotfiles on a new machine.
-"""
-
-__author__ = "Edwin van Rooij"
-
-from commands import install_applications, link, git_ssh_setup, get_disks, \
-    set_data_directory
-from commands import set_fish_shell, set_locale_keyboard, get_config
-from interaction import prompt, prompt_options, ok, exit_program
+from commands import install_applications, link, git_ssh_setup, get_disks, set_data_directory, set_fish_shell, \
+    set_locale_keyboard, get_config, cmd_literal, __cmd
+from interaction import prompt, prompt_options, ok, exit_program, prompt_file_options
 
 
 def main():
-    config = get_config()
-    email = config["email"]
-    symlinks = config["symlinks"]
-    applications = config["applications"]
-
-    print('Welcome!')
-    print('This is my dotfiles repo.\n All programs will now safely install on your system.\n')
-    print('Author: ' + __author__)
+    __cmd("clear")
+    print('\n')
+    print('██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗██╗')
+    print('██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝██║')
+    print('██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  ██║')
+    print('██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  ╚═╝')
+    print('╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗██╗')
+    print('╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝')
+    print('This is my dotfiles repo.')
+    print('All programs will now safely install on your system.')
     if not prompt('Continue?'):
         exit_program()
 
+    # Choose config
+    file_path = prompt_file_options("Which config would you like to use?", 'install/configs')
+    config = get_config(file_path)
+
     # Initialize data disk(s)
+    if not config["is_wsl"]:
+        setup_data_partition_interactively()
+
+    # Setup symlinks
+    if prompt('Execute symlinks from config_solus.json?'):
+        for source, target in config["symlinks"].items():
+            link(source, target)
+
+    # Install software using package manager
+    if prompt('Install config-specified software using package manager?'):
+        install_applications(
+            config["applications"],
+            package_manager=config["package_manager"],
+            install_command=config["install_command"]
+        )
+
+    if prompt('Setup Fish as default shell?'):
+        set_fish_shell()
+
+    if prompt('Generate SSH keys?'):
+        git_ssh_setup(config["email"])
+
+    # Setup key mapping
+    if not config["is_wsl"]:
+        print('Locale keyboard')
+        if prompt('Modify locale keyboard to set dvorak? (login uses this)'):
+            set_locale_keyboard()
+
+
+def setup_data_partition_interactively():
     print('Data')
     # 1; Setup disks?
     if prompt('Setup data partition?'):
@@ -57,38 +86,7 @@ def main():
         set_data_directory(fstab_line)
         link(path, "~/Data")
 
-    # Install software using package manager
-    print('Software installation')
-    if prompt('Install config-specified software using package manager?'):
-        install_applications(
-            applications,
-            package_manager="eopkg",
-            install_command="install"
-        )
-
-    # Setup symlinks
-    print('Symbolic links')
-    if prompt('Execute symlinks from config.json?'):
-        for source, target in symlinks.items():
-            link(source, target)
-
-    print('Shell')
-    if prompt('Setup Fish as default shell?'):
-        set_fish_shell()
-
-    # Setup git ssh key
-    print('Git')
-    if prompt('Generate SSH keys?'):
-        git_ssh_setup(email)
-
-    # Setup key mapping
-    print('Locale keyboard')
-    if prompt('Modify locale keyboard to set dvorak? (login uses this)'):
-        set_locale_keyboard()
-
 
 if __name__ == "__main__":
     """This is executed when run from the command line."""
     main()
-
-

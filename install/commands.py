@@ -35,11 +35,11 @@ def __cmd(command, interactive=False):
     stdout, stderr = process.communicate()
     returncode = process.returncode
 
-    if returncode is 0:
+    if returncode == 0:
         if stdout:
             info(stdout)
         ok("Return return code {}.".format(returncode))
-    elif returncode is 1:
+    elif returncode == 1:
         fail("Return return code {}.\n{}".format(returncode, stderr))
     else:
         fail("Unknown return code {} (not necessarily an error).\nPlease investigate.\n"
@@ -71,15 +71,14 @@ def get_disks():
     return parse_disks(output)
 
 
-def get_config():
-    location = "/home/eddy/dotfiles/install/config.json"
-    info("Retrieving configuration file from {}...".format(location))
-    config = json.load(open(location))
+def get_config(file_path):
+    info("Retrieving configuration file from {}...".format(file_path))
+    config = json.load(open(file_path))
     if config:
         ok("Found install configuration...")
         return config
     else:
-        fail("Could not find configuration at {}".format(location))
+        fail("Could not find configuration at {}".format(file_path))
 
 
 def link(source, target, sudo=False):

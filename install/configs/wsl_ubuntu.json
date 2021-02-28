@@ -1,0 +1,17 @@
+{
+  "email": "edwinvrooij@gmail.com",
+  "symlinks": {
+    "/home/eddy/dotfiles/config/git": "/home/eddy/.gitconfig",
+    "/home/eddy/dotfiles/config/fish": "/home/eddy/.config/fish",
+    "/home/eddy/dotfiles/config/.vimrc": "/home/eddy/.vimrc",
+    "/home/eddy/.vimrc": "/home/eddy/.ideavimrc"
+  },
+  "applications": [
+    "git",
+    "fish",
+    "vim"
+  ],
+  "package_manager": "apt",
+  "install_command": "install",
+  "is_wsl": true
+}
