@@ -31,9 +31,7 @@
       "padding": "15, 15, 15, 15",
       "fontFace": "Fira Code",
       "fontSize": 16,
-      "backgroundImage": "C:\\Users\\EdwinvanRooij\\Google Drive\\bg-image.jpg",
-      "backgroundImageOpacity": 0.4,
-      "acrylicOpacity": 0.9,
+      "acrylicOpacity": 0.7,
       "useAcrylic": true
     },
     "list": [

@@ -4,7 +4,22 @@ Home location:      /home/eddy
 
 Dotfiles location:  /home/eddy/dotfiles
 
-Installation: `bootstrap.sh` from {dotfiles location}
+Installation:
+
+Om password niet meer te vragen, voeg toe aan `/etc/sudoers`:
+`<username> ALL=(ALL) NOPASSWD:ALL`
+
+`echo "eddy ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers`
+
+```bash
+cd && \
+sudo apt update -y && \
+sudo apt upgrade -y && \
+sudo apt install git -y && \
+git clone https://github.com/EdwinVanRooij/dotfiles.git && \
+cd dotfiles && \
+bash bootstrap.sh
+```
 
 Switch keyboard layout - Qwerty: `setxkbmap -layout us`
 Switch keyboard layout - Dvorak: `xmodmap .Xmodmap`
