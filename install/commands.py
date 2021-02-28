@@ -62,8 +62,8 @@ def set_locale_keyboard():
     __cmd('localectl set-keymap dvorak')
 
 
-def set_fish_shell():
-    __cmd("sudo usermod -s /usr/bin/fish eddy")
+def set_fish_shell(hostname):
+    __cmd("sudo usermod -s /usr/bin/fish " + hostname)
 
 
 def get_disks():
@@ -81,7 +81,20 @@ def get_config(file_path):
         fail("Could not find configuration at {}".format(file_path))
 
 
-def link(source, target, sudo=False):
+def parse_home_file_path(file_path, hostname):
+    string_to_replace = "~/"
+
+    if file_path.startswith(string_to_replace):
+        replacement = "/home/" + hostname + "/"
+        file_path = file_path.replace(string_to_replace, replacement)
+
+    return file_path
+
+
+def link(source_raw, target_raw, hostname, sudo=False):
+    source = parse_home_file_path(source_raw, hostname)
+    target = parse_home_file_path(target_raw, hostname)
+
     target_path = path.dirname(target)
     info("Creating path '{}'...".format(target_path))
     __cmd("mkdir -p {}".format(target_path))

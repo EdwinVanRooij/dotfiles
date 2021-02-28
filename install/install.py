@@ -13,7 +13,8 @@ def main():
     print('██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  ╚═╝')
     print('╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗██╗')
     print('╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝')
-    print('This is my dotfiles repo.')
+    hostname = cmd_literal("whoami")
+    print('Hello ' + hostname + ', this is my dotfiles repo.')
     print('All programs will now safely install on your system.')
     if not prompt('Continue?'):
         exit_program()
@@ -29,7 +30,7 @@ def main():
     # Setup symlinks
     if prompt('Execute symlinks from config_solus.json?'):
         for source, target in config["symlinks"].items():
-            link(source, target)
+            link(source, target, hostname)
 
     # Install software using package manager
     if prompt('Install config-specified software using package manager?'):
@@ -41,7 +42,7 @@ def main():
         )
 
     if prompt('Setup Fish as default shell?'):
-        set_fish_shell()
+        set_fish_shell(hostname)
 
     if prompt('Generate SSH keys?'):
         git_ssh_setup(config["email"])

@@ -1,10 +1,7 @@
 {
   "email": "edwinvrooij@gmail.com",
   "symlinks": {
-    "/home/eddy/dotfiles/config/git": "/home/eddy/.gitconfig",
-    "/home/eddy/dotfiles/config/fish": "/home/eddy/.config/fish",
-    "/home/eddy/dotfiles/config/.vimrc": "/home/eddy/.vimrc",
-    "/home/eddy/.vimrc": "/home/eddy/.ideavimrc"
+    "~/dotfiles/config/git": "~/.gitconfig"
   },
   "applications": [
     "git",
