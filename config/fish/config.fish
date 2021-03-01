@@ -64,12 +64,15 @@ alias lah='ls -lah'
 alias rmf="sudo rm -r"
 alias mk="minikube"
 alias h="howdoi"
+alias s="explorer.exe ."
+alias frequent-commands="history | awk '{print $1}' | sort  | uniq --count | sort --numeric-sort --reverse | head -10"
 #alias clipboard='xargs echo -n | xclip -selection clipboard'
 alias xclip="xclip -selection c"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias re-mount-c="sudo umount /mnt/c; and sudo mount -t drvfs C: /mnt/c -o metadata"
 alias sound="pavucontrol"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
@@ -180,11 +183,16 @@ alias lah='ls -ah'
 alias clone='git clone'
 alias pull='git pull'
 alias push='git push'
+alias gd='g diff'
 function co
     git add -A; and git commit -m "$argv[1..-1]"
 end
 function cop
     co "$argv[1..-1]"; git push
+end
+alias dev='git checkout develop; and git pull'
+function amend
+    git commit --amend -m "$argv[1..-1]"
 end
 # ========================
 # end

@@ -4,12 +4,20 @@ Home location:      /home/eddy
 
 Dotfiles location:  /home/eddy/dotfiles
 
-Installation:
+## Installation
 
 Om password niet meer te vragen, voeg toe aan `/etc/sudoers`:
-`<username> ALL=(ALL) NOPASSWD:ALL`
 
-`echo "eddy ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers`
+```bash
+echo "eddy ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
+```
+
+Om WSL mount errors te voorkomen, voeg toe aan `/etc/wsl.config`:
+
+```bash
+echo "[automount]" | sudo tee -a /etc/wsl.config
+echo "options = \"metadata\"" | sudo tee -a /etc/wsl.config
+```
 
 ```bash
 cd && \
