@@ -32,7 +32,9 @@
       "fontFace": "Fira Code",
       "fontSize": 16,
       "acrylicOpacity": 0.7,
-      "useAcrylic": true
+      "useAcrylic": true,
+      "backgroundImage": "C:\\bg-image.jpg",
+      "backgroundImageOpacity": 0.2
     },
     "list": [
       {

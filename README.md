@@ -21,6 +21,11 @@ cd dotfiles && \
 bash bootstrap.sh
 ```
 
+For Ubuntu on WSL, copy `bg-image.jps` from 
+"C:\Users\EdwinvanRooij\Google Drive" to "C:\".
+
+Check `dotfiles/manual-updates` for additional setup.
+
 Switch keyboard layout - Qwerty: `setxkbmap -layout us`
 Switch keyboard layout - Dvorak: `xmodmap .Xmodmap`
 
