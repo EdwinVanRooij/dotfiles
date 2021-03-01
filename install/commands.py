@@ -47,7 +47,7 @@ def __cmd(command, interactive=False):
              .format(returncode, stdout, stderr))
 
 
-def git_ssh_setup(email):
+def git_ssh_setup(email, browser_command):
     info("Generating ssh keys... {}".format(email))
     __cmd("ssh-keygen -t rsa -b 4096 -C {}".format(email), interactive=True)  # Generate key
     info("Execute the next command manually, in a separate window. Press enter when done.")
@@ -55,7 +55,7 @@ def git_ssh_setup(email):
     print("ssh-add ~/.ssh/id_rsa && ", end="")
     print("xclip -sel clip < ~/.ssh/id_rsa.pub")
     if prompt('Done?'):
-        __cmd("xdg-open https://github.com/settings/ssh/new")
+        __cmd(browser_command + " https://github.com/settings/ssh/new")
 
 
 def set_locale_keyboard():

@@ -21,5 +21,6 @@
   ],
   "package_manager": "eopkg",
   "install_command": "install",
-  "is_wsl": true
+  "is_wsl": true,
+  "browser_command": "xdg-open"
 }

@@ -45,7 +45,7 @@ def main():
         set_fish_shell(hostname)
 
     if prompt('Generate SSH keys?'):
-        git_ssh_setup(config["email"])
+        git_ssh_setup(config["email"], config["browser_command"])
 
     # Setup key mapping
     if not config["is_wsl"]:
