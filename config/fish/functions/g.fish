@@ -3,7 +3,13 @@ function g --description "Git aliases"
     # Do we have a first argument?
     if [ $argv[1] ]
 
-        if [ $argv[1] = "ignore" ]
+        if [ $argv[1] = "diff" ]
+	    if [ $argv[2] ]
+                git diff --color=always $argv[2..-1] | less -r
+            else
+                git diff --color=always | less -r
+            end
+        else if [ $argv[1] = "ignore" ]
             if [ $argv[2] ]
                 if [ $argv[2] = "dl" ]
                     download-gitignore
@@ -58,10 +64,33 @@ function g --description "Git aliases"
             iinit $argv[2..-1]
 
         else if [ $argv[1] = "ls" ]
-            git log --graph --pretty=format:'%C(dim)%h %C(cyan)(%cr) %C(blue bold)|%C(reset)%C(yellow)%d%Creset %s %C(bold blue)- %an%Creset' --abbrev-commit
+            git log --graph --pretty=format:'%C(dim)%h %C(cyan)(%cr) %C(blue bold)|%C(reset)%C(yellow)%d%Creset %s %C(bold blue)- %an%Creset' --abbrev-commit --color=always | less -r
 
         else if [ $argv[1] = "ch" ]
-            if [ $argv[2] ]
+            if [ $argv[2] = "br" ]
+                if [ $argv[3] ]  
+                    git checkout $argv[3..-1]
+                else
+		    #Display branches, search with fzf, read result, checkout result minus remotes/origin if present, so that we have it locally.
+                    git branch --all | grep -v HEAD | string trim | fzf | read -l result; and git checkout (string replace 'remotes/origin/' '' -- "$result")
+                end
+	    else if [ $argv[2] = "-b" ]
+
+  # Check if user really wants to create a branch from non-dev
+  set git_branch (git branch ^/dev/null | grep "\*" | sed 's/* //')
+  if [ $git_branch != develop ]
+    read -l -P 'Current branch is not develop, continue? [y/N] ' confirm
+    switch $confirm
+      case Y y
+        git checkout $argv[2..-1]
+      case '' N n
+        return 1
+    end
+  else 
+    git checkout $argv[2..-1]
+  end
+
+            else if [ $argv[2] ]
                 git checkout $argv[2..-1]
             else
                 echo "Please specify something after 'git checkout'."
