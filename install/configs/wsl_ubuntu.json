@@ -1,11 +1,15 @@
 {
   "email": "edwinvrooij@gmail.com",
   "symlinks": {
-    "~/dotfiles/config/git": "~/.gitconfig"
+    "~/dotfiles/config/git": "~/.gitconfig",
+    "~/dotfiles/config/.vimrc": "~/.vimrc",
+    "~/dotfiles/config/fish": "~/.config/fish",
+    "~/.vimrc": "~/.ideavimrc"
   },
   "applications": [
     "git",
     "fish",
+    "fzf",
     "vim"
   ],
   "package_manager": "apt",

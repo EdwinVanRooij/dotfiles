@@ -1,21 +1,22 @@
 {
   "email": "edwinvrooij@gmail.com",
   "symlinks": {
-    "/home/eddy/dotfiles/config/xmodmap": "/home/eddy/.Xmodmap",
-    "/home/eddy/dotfiles/config/gtk-css": "/home/eddy/.config/gtk-3.0/gtk.css",
-    "/home/eddy/dotfiles/config/git": "/home/eddy/.gitconfig",
-    "/home/eddy/dotfiles/config/fish": "/home/eddy/.config/fish",
-    "/home/eddy/dotfiles/config/.vimrc": "/home/eddy/.vimrc",
-    "/home/eddy/dotfiles/config/autokey.desktop": "/home/eddy/.config/autostart",
-    "/home/eddy/dotfiles/config/spotify.desktop": "/home/eddy/.config/autostart",
-    "/home/eddy/dotfiles/Mazi": "/home/eddy/.config/autokey/data/",
-    "/home/eddy/.vimrc": "/home/eddy/.ideavimrc",
+    "~/dotfiles/config/xmodmap": "~/.Xmodmap",
+    "~/dotfiles/config/gtk-css": "~/.config/gtk-3.0/gtk.css",
+    "~/dotfiles/config/git": "~/.gitconfig",
+    "~/dotfiles/config/.vimrc": "~/.vimrc",
+    "~/dotfiles/config/fish": "~/.config/fish",
+    "~/dotfiles/config/autokey.desktop": "~/.config/autostart",
+    "~/dotfiles/config/spotify.desktop": "~/.config/autostart",
+    "~/dotfiles/Mazi": "~/.config/autokey/data/",
+    "~/.vimrc": "~/.ideavimrc",
     "/mnt/data": "/home/eddy/Data"
   },
   "applications": [
     "git",
     "fish",
     "vim",
+    "fzf",
     "xdotool"
   ],
   "package_manager": "eopkg",

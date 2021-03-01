@@ -75,3 +75,4 @@ data/pre_shutdown.txt
 data/every-hour.txt
 data/every_hour.txt
 data/log.txt
+/.vs

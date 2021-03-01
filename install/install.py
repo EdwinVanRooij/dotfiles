@@ -28,7 +28,7 @@ def main():
         setup_data_partition_interactively()
 
     # Setup symlinks
-    if prompt('Execute symlinks from config_solus.json?'):
+    if prompt('Execute symlinks from ' + file_path +'?'):
         for source, target in config["symlinks"].items():
             link(source, target, hostname)
 
