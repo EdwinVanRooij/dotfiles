@@ -74,6 +74,9 @@ function g --description "Git aliases"
 		    #Display branches, search with fzf, read result, checkout result minus remotes/origin if present, so that we have it locally.
                     git branch --all | grep -v HEAD | string trim | fzf | read -l result; and git checkout (string replace 'remotes/origin/' '' -- "$result")
                 end
+	    else if [ $argv[2] = "fi" ]
+		    #Display files, search with fzf, read result, checkout result.
+                    git diff --name-only | fzf | read -l result; and git checkout "$result"
 	    else if [ $argv[2] = "-b" ]
 
   # Check if user really wants to create a branch from non-dev
