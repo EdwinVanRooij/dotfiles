@@ -13,6 +13,7 @@ cd FancyZones
 
 # Copy fancy zones settings into dotfiles
 cp settings.json ~/dotfiles/config/power-toys-fancy-zones-settings.json
+cp zones-settings.json ~/dotfiles/config/power-toys-fancy-zones-zones-settings.json
 
 cd ..
 
