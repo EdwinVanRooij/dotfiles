@@ -51,13 +51,7 @@
         "name": "Linnea",
         "commandline": "powershell.exe -NoLogo -NoExit",
         "hidden": false,
-        "fontFace": "Cascadia Code PL",
-        "fontSize": 10,
-        "backgroundImage": "C:\\Users\\EdwinvanRooij\\Google Drive\\bg-image.jpg",
-        "backgroundImageOpacity": 0.2,
-        "acrylicOpacity": 0.8,
-        "useAcrylic": true,
-        "startingDirectory": "Q:\\Development"
+        "startingDirectory": "%USERPROFILE%"
       },
       {
         // Make changes here to the powershell.exe profile.
