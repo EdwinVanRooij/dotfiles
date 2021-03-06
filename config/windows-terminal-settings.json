@@ -53,7 +53,6 @@
         "hidden": false,
         "fontFace": "Cascadia Code PL",
         "fontSize": 10,
-        "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
         "backgroundImage": "C:\\Users\\EdwinvanRooij\\Google Drive\\bg-image.jpg",
         "backgroundImageOpacity": 0.2,
         "acrylicOpacity": 0.8,
@@ -79,12 +78,6 @@
         "hidden": false,
         "name": "Azure Cloud Shell",
         "source": "Windows.Terminal.Azure"
-      },
-      {
-        "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-        "hidden": false,
-        "name": "Ubuntu-20.04",
-        "source": "Windows.Terminal.Wsl"
       }
     ]
   },
