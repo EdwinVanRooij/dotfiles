@@ -12,6 +12,8 @@ New-Alias c clear
 New-Alias l ls
 New-Alias sw winget.exe
 
+${function:run-dbqg} = { cd C:\Projects\NICAPRA-GIT\Deployments\Powershell\BatchFiles\; & '.\Run DBQG in Kestrel.bat' }
+
 function makedir { CreateAndSet-Directory }
 New-Alias mkd makedir
 
