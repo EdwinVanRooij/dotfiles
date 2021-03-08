@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/fish
 
 cd /mnt/c/Users/*/AppData/Local/Packages
 cd ../../..

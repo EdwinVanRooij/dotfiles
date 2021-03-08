@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/fish
 
 # Move into power toys root directory
 cd /mnt/c/Users/*/AppData/Local/Microsoft/PowerToys/
