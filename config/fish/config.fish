@@ -65,6 +65,7 @@ alias rmf="sudo rm -r"
 alias mk="minikube"
 alias h="howdoi"
 alias s="explorer.exe ."
+alias bat="cmd.exe /c"
 alias frequent-commands="history | awk '{print $1}' | sort  | uniq --count | sort --numeric-sort --reverse | head -10"
 #alias clipboard='xargs echo -n | xclip -selection clipboard'
 alias xclip="xclip -selection c"
