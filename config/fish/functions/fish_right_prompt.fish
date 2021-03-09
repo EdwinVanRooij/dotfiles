@@ -159,6 +159,8 @@ function fish_right_prompt
     end
     echo -n ' '
 
+    set_color normal
+    echo -n "- "
     set_color brmagenta
     echo -n (date +"%T")
     set_color normal
