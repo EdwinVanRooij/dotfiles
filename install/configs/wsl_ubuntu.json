@@ -11,6 +11,8 @@
     "fish",
     "fzf",
     "python3-pip",
+    "nodejs",
+    "npm",
     "vim"
   ],
   "package_manager": "apt",
