@@ -4,5 +4,26 @@
     "files.autoSaveDelay": 200,
     "editor.fontSize": 16,
     "editor.cursorBlinking": "solid",
-    "vim.vimrc.path": "$HOME/vs-code.vimrc"
+    "vim.vimrc.path": "$HOME/vs-code.vimrc",
+    "editor.quickSuggestions": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "/"
+            ],
+            "commands": [
+                "editor.action.toggleLineComment",
+            ]
+        },
+        {
+            "before": [
+                "ctrl+f"
+            ],
+            "commands": [
+                "editor.action.formatDocument",
+            ]
+        },
+    ],
 }
