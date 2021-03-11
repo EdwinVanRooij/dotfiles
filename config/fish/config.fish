@@ -202,7 +202,8 @@ end
 
 # Edit <file>
 alias ef='vim ~/.config/fish/config.fish'
-alias et='vim ~/dotfiles/config/windows-terminal-settings.json; and ~/dotfiles/manual-updates/copy-windows-terminal-settings-to-source.sh'
+#alias et='vim ~/dotfiles/config/windows-terminal-settings.json; and ~/dotfiles/manual-updates/copy-windows-terminal-settings-to-source.sh'
+alias et='code ~/dotfiles/config/windows-terminal-settings.json; and ~/dotfiles/manual-updates/copy-windows-terminal-settings-to-source.sh'
 alias ei='vim ~/.config/i3/config'
 alias ev='vim ~/.vimrc'
 alias er='vim ~/dotfiles/README.md'
