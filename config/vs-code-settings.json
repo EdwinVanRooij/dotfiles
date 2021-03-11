@@ -4,5 +4,5 @@
     "files.autoSaveDelay": 200,
     "editor.fontSize": 16,
     "editor.cursorBlinking": "solid",
-    "vim.vimrc.path": "$HOME/.vscodevimrc"
+    "vim.vimrc.path": "$HOME/vs-code.vimrc"
 }
