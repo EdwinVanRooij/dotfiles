@@ -1,5 +1,7 @@
 {
     "vim.vimrc.enable": true,
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 200
+    "files.autoSaveDelay": 200,
+    "editor.fontSize": 16,
+    "editor.cursorBlinking": "solid"
 }
