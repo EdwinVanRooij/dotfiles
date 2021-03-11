@@ -1,3 +1,5 @@
 {
-    "vim.vimrc.enable": true
+    "vim.vimrc.enable": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 200
 }
