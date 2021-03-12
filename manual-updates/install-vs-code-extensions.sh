@@ -12,3 +12,4 @@ code --install-extension slevesque.vscode-autohotkey
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscodevim.vim
 code --install-extension xabikos.JavaScriptSnippets
+code --install-extension ms-vscode.powershell

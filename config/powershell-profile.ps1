@@ -1,3 +1,9 @@
+if ($host.Name -eq 'ConsoleHost') {
+    Import-Module PSReadline
+    
+    Set-PSReadLineKeyHandler -Key Ctrl+u -Function RevertLine
+}
+
 # Easier Navigation: .., ..., ...., ....., and ~
 ${function:~} = { Set-Location ~ }
 # PoSh won't allow ${function:..} because of an invalid path error, so...
