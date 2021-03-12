@@ -2,6 +2,8 @@ if ($host.Name -eq 'ConsoleHost') {
     Import-Module PSReadline
     
     Set-PSReadLineKeyHandler -Key Ctrl+u -Function RevertLine
+    Set-PSReadLineKeyHandler -Key Ctrl+e -Function EndOfLine
+    Set-PSReadLineKeyHandler -Key Ctrl+w -Function ShellBackwardKillWord
 }
 
 # Easier Navigation: .., ..., ...., ....., and ~
