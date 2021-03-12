@@ -16,6 +16,10 @@
   ],
   "vim.normalModeKeyBindings": [
     {
+      "before": ["f"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
       "before": ["/"],
       "commands": ["editor.action.commentLine"]
     },

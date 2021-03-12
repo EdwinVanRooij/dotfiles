@@ -304,10 +304,10 @@
       "keys": "ctrl+s"
     },
 
-    { "command": { "action": "moveFocus", "direction": "down" }, "keys": "ctrl+c" },
+    { "command": { "action": "moveFocus", "direction": "down" }, "keys": "ctrl+j" },
     { "command": { "action": "moveFocus", "direction": "left" }, "keys": "ctrl+h" },
     { "command": { "action": "moveFocus", "direction": "right" }, "keys": "ctrl+l" },
-    { "command": { "action": "moveFocus", "direction": "up" }, "keys": "ctrl+v" }
+    { "command": { "action": "moveFocus", "direction": "up" }, "keys": "ctrl+k" }
     //{ "command": { "action": "moveFocus", "direction": "previous" }, "keys": "ctrl+alt+left" }
   ]
 }
