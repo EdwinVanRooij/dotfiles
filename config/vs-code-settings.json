@@ -1,71 +1,53 @@
 {
-    "vim.vimrc.enable": true,
-    "files.autoSave": "onFocusChange",
-    "editor.fontSize": 16,
-    "editor.cursorBlinking": "solid",
-    "vim.vimrc.path": "$HOME/vs-code.vimrc",
-    "editor.quickSuggestions": true,
-    "editor.suggestOnTriggerCharacters": true,
-    "vim.useSystemClipboard": true,
-    "vim.leader": "<space>",
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "/"
-            ],
-            "commands": [
-                "editor.action.commentLine",
-            ]
-        },
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                "/"
-            ],
-            "commands": [
-                "editor.action.commentLine",
-            ]
-        },
-        {
-            "before": [
-                "ctrl+f"
-            ],
-            "commands": [
-                "editor.action.formatDocument",
-            ]
-        },
-        {
-            "before": [
-                "ctrl+v"
-            ],
-            "commands": [
-                "workbench.action.splitEditorDown",
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "workbench.action.previousEditor",
-            ]
-        },
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "workbench.action.nextEditor",
-            ]
-        },
-        {
-            "before": [
-                "<leader>q"
-            ],
-            "commands": [
-                "workbench.action.closeOtherEditors",
-            ]
-        },
-    ],
+  "vim.vimrc.enable": true,
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 16,
+  "editor.cursorBlinking": "solid",
+  "vim.vimrc.path": "$HOME/vs-code.vimrc",
+  "editor.quickSuggestions": true,
+  "editor.suggestOnTriggerCharacters": true,
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["/"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["/"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["ctrl+f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["ctrl+v"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": [">"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>q"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    }
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"workbench.iconTheme": "material-icon-theme"
 }
