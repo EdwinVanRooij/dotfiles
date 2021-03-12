@@ -53,56 +53,56 @@ nnoremap D daw
 nnoremap <leader>d D
 nnoremap <C-d> {d}
 " E
-nnoremap <leader>e :action ShowErrorDescription<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <leader>e :action ShowErrorDescription<cr>
 " F
-nnoremap f :action ShowIntentionActions<cr>
+"COMMENTED BECAUSE VSCODE nnoremap f :action ShowIntentionActions<cr>
 nnoremap F <nop>
-nnoremap <c-F> :action ReformatCode<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <c-F> :action ReformatCode<cr>
 " G
-nnoremap ga :action GotoAction<cr>
+"COMMENTED BECAUSE VSCODE nnoremap ga :action GotoAction<cr>
 nnoremap gh 15zh
 nnoremap gl 15zl
 nnoremap gH 100zh
 nnoremap gL 100zl
-nnoremap gl :action MoveTabRight<cr>
-nnoremap gj :action MoveTabDown<cr>
-nnoremap gS :action UnsplitAll<cr>
-nnoremap ge :action GotoNextError<cr>:action ShowErrorDescription<CR>
-nnoremap gE :action GotoPreviousError<cr>:action ShowErrorDescription<CR>
-nnoremap gu :action FindUsages<cr>
-nnoremap gG :action Generate<cr>
-nnoremap gd :action GotoDeclaration<cr>
-nnoremap gnc :action NewClass<cr>
-nnoremap gnd :action NewDir<cr>
-nnoremap gnf :action NewFile<cr>
+"COMMENTED BECAUSE VSCODE nnoremap gl :action MoveTabRight<cr>
+"COMMENTED BECAUSE VSCODE nnoremap gj :action MoveTabDown<cr>
+"COMMENTED BECAUSE VSCODE nnoremap gS :action UnsplitAll<cr>
+"COMMENTED BECAUSE VSCODE nnoremap ge :action GotoNextError<cr>:action ShowErrorDescription<CR>
+"COMMENTED BECAUSE VSCODE nnoremap gE :action GotoPreviousError<cr>:action ShowErrorDescription<CR>
+"COMMENTED BECAUSE VSCODE nnoremap gu :action FindUsages<cr>
+"COMMENTED BECAUSE VSCODE nnoremap gG :action Generate<cr>
+"COMMENTED BECAUSE VSCODE nnoremap gd :action GotoDeclaration<cr>
+"COMMENTED BECAUSE VSCODE nnoremap gnc :action NewClass<cr>
+"COMMENTED BECAUSE VSCODE nnoremap gnd :action NewDir<cr>
+"COMMENTED BECAUSE VSCODE nnoremap gnf :action NewFile<cr>
 " H
 nnoremap H ^
 vnoremap H ^
-nnoremap <c-h> :action VimWindowLeft<cr>
-inoremap <c-h> <esc>:action VimWindowLeft<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <c-h> :action VimWindowLeft<cr>
+"COMMENTED BECAUSE VSCODE inoremap <c-h> <esc>:action VimWindowLeft<cr>
 " I
 " J
 nnoremap J }
 vnoremap J }
 nnoremap <silent> j gj:noh<cr>
-nnoremap <c-j> :action VimWindowDown<cr>
-inoremap <c-j> <esc>:action VimWindowDown<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <c-j> :action VimWindowDown<cr>
+"COMMENTED BECAUSE VSCODE inoremap <c-j> <esc>:action VimWindowDown<cr>
 " K
 nnoremap K {
 vnoremap K {
 nnoremap <silent> k gk:noh<cr>
-inoremap <c-k> <esc>:action VimWindowUp<cr>
-nnoremap <c-k> :action VimWindowUp<cr>
+"COMMENTED BECAUSE VSCODE inoremap <c-k> <esc>:action VimWindowUp<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <c-k> :action VimWindowUp<cr>
 " L
 nnoremap L $
 vnoremap L $
-inoremap <c-l> <esc>:action VimWindowRight<cr>
-nnoremap <c-l> :action VimWindowRight<cr>
+"COMMENTED BECAUSE VSCODE inoremap <c-l> <esc>:action VimWindowRight<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <c-l> :action VimWindowRight<cr>
 " M
-nnoremap m :action GotoNextBookmark<cr>
-nnoremap M :action ToggleBookmark<CR>
+"COMMENTED BECAUSE VSCODE nnoremap m :action GotoNextBookmark<cr>
+"COMMENTED BECAUSE VSCODE nnoremap M :action ToggleBookmark<CR>
 " N
-nnoremap <C-n> :action SearchEverywhere<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <C-n> :action SearchEverywhere<cr>
 "nnoremap <C-n> :action GotoClass<cr>
 "nnoremap <C-s-N> :action GotoFile<cr>
 " O
@@ -112,16 +112,16 @@ nnoremap <leader>O :set paste<CR>O<Esc>j^:set nopaste<CR>
 " P
 nnoremap P viwp
 vnoremap P p
-nnoremap <c-p> :action ParameterInfo<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <c-p> :action ParameterInfo<cr>
 "nnoremap P viw"0p
 "vnoremap P "0p
 " Q
 nnoremap Q qq
 nnoremap <leader>q :q!<CR>
-nnoremap <leader>Q :action CloseAllEditorsButActive<cr>
+"nnoremap <leader>Q :action CloseAllEditorsButActive<cr>
 " R
 nnoremap R <c-r>
-nnoremap <c-r> :action RenameElement<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <c-r> :action RenameElement<cr>
 " S
 nnoremap s /
 nnoremap S ?
@@ -143,7 +143,7 @@ nnoremap <leader>y yy
 " Z
 nnoremap <c-z> <nop>
 nnoremap z 100zh^zz5<C-e>
-nnoremap Z :action CollapseRegion<cr>
+"COMMENTED BECAUSE VSCODE nnoremap Z :action CollapseRegion<cr>
 " =
 nnoremap = @q
 " Backspace
@@ -166,18 +166,18 @@ nnoremap , Yp
 vnoremap , yP
 " .
 " ;
-"nnoremap ; :action VimFilePrevious<cr>
+"COMMENTED BECAUSE VSCODE "nnoremap ; :action VimFilePrevious<cr>
 nnoremap ; <C-S-6>
 " /
-"nnoremap / :action CommentByLineComment<cr>
-vnoremap / <Esc>gvhh:<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<cr>
+"COMMENTED BECAUSE VSCODE "nnoremap / :action CommentByLineComment<cr>
+"COMMENTED BECAUSE VSCODE vnoremap / <Esc>gvhh:<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<cr>
 " <
-nnoremap < :action PreviousTab<cr>
+"COMMENTED BECAUSE VSCODE nnoremap < :action PreviousTab<cr>
 " >
-nnoremap > :action NextTab<cr>
+"COMMENTED BECAUSE VSCODE nnoremap > :action NextTab<cr>
 " 1
-inoremap <c-1> :action ActivateProjectToolWindow<cr>
-nnoremap <c-1> :action ActivateProjectToolWindow<cr>
+"COMMENTED BECAUSE VSCODE inoremap <c-1> :action ActivateProjectToolWindow<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <c-1> :action ActivateProjectToolWindow<cr>
 " 2
 " 3
 " 4
@@ -192,8 +192,8 @@ nnoremap <c-1> :action ActivateProjectToolWindow<cr>
 " F3
 " F4
 " F5
-nnoremap <f5> :action Run<cr>
-nnoremap <s-f5> :action Stop<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <f5> :action Run<cr>
+"COMMENTED BECAUSE VSCODE nnoremap <s-f5> :action Stop<cr>
 " F6
 " F7
 " F8
