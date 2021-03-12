@@ -1,7 +1,6 @@
 {
     "vim.vimrc.enable": true,
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 200,
+    "files.autoSave": "onFocusChange",
     "editor.fontSize": 16,
     "editor.cursorBlinking": "solid",
     "vim.vimrc.path": "$HOME/vs-code.vimrc",
@@ -9,13 +8,23 @@
     "editor.suggestOnTriggerCharacters": true,
     "vim.useSystemClipboard": true,
     "vim.leader": "<space>",
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "/"
+            ],
+            "commands": [
+                "editor.action.commentLine",
+            ]
+        },
+    ],
     "vim.normalModeKeyBindings": [
         {
             "before": [
                 "/"
             ],
             "commands": [
-                "editor.action.toggleLineComment",
+                "editor.action.commentLine",
             ]
         },
         {
