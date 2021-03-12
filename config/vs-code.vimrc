@@ -35,6 +35,7 @@ vnoremap <esc> <C-c>
 " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 " end
 " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+"
 
 " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 " start "Key mappings"
@@ -167,7 +168,8 @@ vnoremap , yP
 " .
 " ;
 "COMMENTED BECAUSE VSCODE "nnoremap ; :action VimFilePrevious<cr>
-nnoremap ; <C-S-6>
+"
+"nnoremap ; <C-S-6>
 " /
 "COMMENTED BECAUSE VSCODE "nnoremap / :action CommentByLineComment<cr>
 "COMMENTED BECAUSE VSCODE vnoremap / <Esc>gvhh:<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<cr>
