@@ -15,5 +15,9 @@
     {
         "key": "ctrl+e",
         "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "alt+1",
+        "command": "workbench.files.action.showActiveFileInExplorer"
     }
 ]
