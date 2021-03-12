@@ -75,6 +75,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias re-mount-c="sudo umount /mnt/c; and sudo mount -t drvfs C: /mnt/c -o metadata"
+alias udemy="explorer.exe https://www.udemy.com/home/my-courses/learning/"
 alias sound="pavucontrol"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
