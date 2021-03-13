@@ -19,6 +19,7 @@ ${function:......} = { Set-Location ..\..\..\..\.. }
 New-Alias c clear
 New-Alias l ls
 New-Alias sw winget.exe
+${function:s} = { explorer.exe .}
 
 ${function:run-dbqg} = { cd C:\Projects\NICAPRA-GIT\Deployments\Powershell\BatchFiles\; & '.\Run DBQG in Kestrel.bat' }
 
