@@ -16,6 +16,26 @@
   ],
   "vim.normalModeKeyBindings": [
     {
+      "before": ["m"],
+      "commands": ["bookmarks.jumpToNext"]
+    },
+    {
+      "before": ["M"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["gu"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["ge"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["gE"],
+      "commands": ["editor.action.marker.previous"]
+    },
+    {
       "before": ["f"],
       "commands": ["editor.action.quickFix"]
     },
