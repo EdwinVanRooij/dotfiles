@@ -27,7 +27,8 @@ set noshowcmd
 syntax enable
 filetype plugin indent on
 " ================ Leader key ================
-map <space> \
+nnoremap <SPACE> <Nop>
+let mapleader = "\<Space>"
 set timeoutlen=1250
 " ================ end  ================
 " Removes the delay
