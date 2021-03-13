@@ -1,0 +1,16 @@
+alefragnani.Bookmarks
+Angular.ng-template
+bmalehorn.vscode-fish
+christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+eamodio.gitlens
+esbenp.prettier-vscode
+ms-vscode.powershell
+msjsdiag.debugger-for-chrome
+PKief.material-icon-theme
+slevesque.vscode-autohotkey
+thqby.vscode-autohotkey2-lsp
+VisualStudioExptTeam.vscodeintellicode
+vscodevim.vim
+xabikos.JavaScriptSnippets
