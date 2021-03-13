@@ -80,5 +80,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": -1
+  "window.zoomLevel": -1,
+  "explorer.confirmDelete": false,
+  "angular.experimental-ivy": true
 }
