@@ -60,8 +60,14 @@
       "commands": ["workbench.action.nextEditor"]
     },
     {
-      "before": ["<leader>q"],
+      "before": ["<leader>", "q"],
       "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": [";"],
+      "commands": [
+        "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+      ]
     }
   ],
   "editor.suggestSelection": "first",
@@ -72,7 +78,7 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"workbench.iconTheme": "material-icon-theme",
-"window.zoomLevel": -1
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": -1
 }
